@@ -3,6 +3,7 @@
 
 \include "../defs.ly"
 \include "1-allegro/clarinet.ly"
+\include "2-rondo/clarinet.ly"
 \include "1-allegro/bassoon.ly"
 
 \header {
@@ -43,6 +44,29 @@
           \set Staff.shortInstrumentName = "Basson"
           \context Staff << 
             \context Voice { \OneOneBassoon }
+          >>
+        >>
+    >>
+    \layout {}
+  }
+
+  \score {
+    \removeWithTag #'(withCue orig)
+    <<
+      \new Staff
+        <<
+          \set Staff.instrumentName = \markup { "Clarinet in B" \flat }
+          \set Staff.shortInstrumentName = "Clar."
+          \context Staff << 
+            \context Voice { \OneTwoClarinet }
+          >>
+        >>
+      \new Staff
+        <<
+          \set Staff.instrumentName = "Bassoon"
+          \set Staff.shortInstrumentName = "Basson"
+          \context Staff << 
+            \context Voice {  }
           >>
         >>
     >>

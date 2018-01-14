@@ -3,7 +3,7 @@ PDF := ../../pdf
 DEFS := ../defs.ly
 PIECE := tausch-trois-duos-1
 
-CLARINET := clarinet.ly 1-allegro/clarinet.ly $(DEFS)
+CLARINET := clarinet.ly 1-allegro/clarinet.ly 2-rondo/clarinet.ly $(DEFS)
 
 BASSOON := bassoon.ly 1-allegro/bassoon.ly $(DEFS)
 
