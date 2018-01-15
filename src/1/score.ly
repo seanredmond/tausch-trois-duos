@@ -5,6 +5,7 @@
 \include "1-allegro/clarinet.ly"
 \include "2-rondo/clarinet.ly"
 \include "1-allegro/bassoon.ly"
+\include "2-rondo/bassoon.ly"
 
 \header {
   title =  "Six Duos"
@@ -66,10 +67,13 @@
           \set Staff.instrumentName = "Bassoon"
           \set Staff.shortInstrumentName = "Basson"
           \context Staff << 
-            \context Voice {  }
+            \context Voice { \OneTwoBassoon }
           >>
         >>
     >>
+    \header {
+      piece = "Rondo"
+    }
     \layout {}
   }
 }
