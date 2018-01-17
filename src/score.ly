@@ -1,11 +1,11 @@
 \version "2.19.64"
 \pointAndClickOff
 
-\include "../defs.ly"
-\include "1-allegro/clarinet.ly"
-\include "2-rondo/clarinet.ly"
-\include "1-allegro/bassoon.ly"
-\include "2-rondo/bassoon.ly"
+\include "defs.ly"
+\include "1/1-allegro/clarinet.ly"
+\include "1/2-rondo/clarinet.ly"
+\include "1/1-allegro/bassoon.ly"
+\include "1/2-rondo/bassoon.ly"
 
 \header {
   title =  "Six Duos"
