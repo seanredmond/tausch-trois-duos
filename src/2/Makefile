@@ -1,4 +1,3 @@
-.PHONY: midi-allegro
 PDF := ../../pdf
 DEFS := ../defs.ly
 PIECE := tausch-trois-duos-2
@@ -13,11 +12,15 @@ $(PDF)/$(PIECE)-clarinet.pdf: $(CLARINET)
 $(PDF)/$(PIECE)-bassoon.pdf: $(BASSOON)
 	lilypond -o $(PDF)/$(PIECE)-bassoon bassoon.ly
 
-all: clarinet bassoon
+all: clarinet bassoon midi
 
 clarinet: $(PDF)/$(PIECE)-clarinet.pdf
 
 bassoon: $(PDF)/$(PIECE)-bassoon.pdf
 
+midi: midi-allegro
+
+midi-allegro:
+	cd 1-allegro && $(MAKE) midi
 
 
