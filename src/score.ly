@@ -6,6 +6,7 @@
 \include "1/2-rondo/clarinet.ly"
 \include "1/1-allegro/bassoon.ly"
 \include "1/2-rondo/bassoon.ly"
+\include "2/1-allegro/clarinet.ly"
 
 \header {
   title =  "Six Duos"
@@ -74,6 +75,36 @@
     \header {
       piece = "Rondo"
     }
+    \layout {}
+  }
+}
+
+\bookpart {
+  \header {
+    subtitle = "Duetto II"
+  }
+
+
+  \score {
+    \removeWithTag #'(withCue orig)
+    <<
+      \new Staff
+        <<
+          \set Staff.instrumentName = \markup { "Clarinet in B" \flat }
+          \set Staff.shortInstrumentName = "Clar."
+          \context Staff << 
+            \context Voice { \TwoOneClarinet }
+          >>
+        >>
+      \new Staff
+        <<
+          \set Staff.instrumentName = "Bassoon"
+          \set Staff.shortInstrumentName = "Basson"
+          \context Staff << 
+            \context Voice { }
+          >>
+        >>
+    >>
     \layout {}
   }
 }
