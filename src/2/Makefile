@@ -16,16 +16,10 @@ $(PDF)/$(PIECE)-bassoon.pdf: $(BASSOON)
 $(PDF)/$(PIECE)-score.pdf: score.ly $(CLARINET) $(BASSOON)
 	lilypond -o $(PDF)/$(PIECE)-score score.ly
 
-all: clarinet bassoon score midi
+all: clarinet bassoon midi
 
 clarinet: $(PDF)/$(PIECE)-clarinet.pdf
 
 bassoon: $(PDF)/$(PIECE)-bassoon.pdf
 
-score: $(PDF)/$(PIECE)-score.pdf
-
-midi: midi-allegro midi-rondo
-
-midi-allegro:
-	cd 1-allegro && $(MAKE) midi
 
