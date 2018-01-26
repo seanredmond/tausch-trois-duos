@@ -71,6 +71,9 @@
           >>
         >>
     >>
+    \header {
+        piece = "Rondo"
+    }
     \layout {}
   }
 }
