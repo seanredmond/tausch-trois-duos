@@ -1,3 +1,4 @@
+.SUFFIXES:
 PDF := ../pdf
 DEFS := defs.ly
 PIECE := tausch-trois-duos

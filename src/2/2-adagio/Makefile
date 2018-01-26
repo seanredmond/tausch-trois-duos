@@ -1,3 +1,4 @@
+.SUFFIXES:
 MIDIF := ../../../midi
 PIECE := tausch-trois-duos-2
 

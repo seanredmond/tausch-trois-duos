@@ -1,3 +1,4 @@
+.SUFFIXES:
 .PHONY: midi-allegro
 PDF := ../../pdf
 DEFS := ../defs.ly
