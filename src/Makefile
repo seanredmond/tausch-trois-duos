@@ -3,18 +3,21 @@ PDF := ../pdf
 DEFS := defs.ly
 PIECE := tausch-trois-duos
 
-CLARINET := 1/*/clarinet.ly 2/*/clarinet.ly
-BASSOON := 1/*/bassoon.ly 2/*/bassoon.ly
+CLARINET := 1/*/clarinet.ly 2/*/clarinet.ly 3/*/clarinet.ly
+BASSOON := 1/*/bassoon.ly 2/*/bassoon.ly 3/*/bassoon.ly
 
 $(PDF)/$(PIECE)-score.pdf: score.ly $(CLARINET) $(BASSOON)
 	lilypond -o $(PDF)/$(PIECE)-score score.ly
 
 score: $(PDF)/$(PIECE)-score.pdf
 
-all: score duo-1 duo-2
+all: score duo-1 duo-2 duo-3
 
 duo-1:
 	cd 1 && $(MAKE) all
 
 duo-2:
 	cd 2 && $(MAKE) all
+
+duo-3:
+	cd 3 && $(MAKE) all
