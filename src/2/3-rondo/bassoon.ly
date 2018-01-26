@@ -2,6 +2,7 @@ TwoThreeBassoon = \relative d {
     \clef "bass"
     \key bes \major
     \time 2/4
+    \tempo Allegretto 4=120
     \partial 4 r4
     \repeat volta 2 {
         | % 1
