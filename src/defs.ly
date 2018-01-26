@@ -1,3 +1,4 @@
+adlib = \markup { \italic { "ad libitum" } }
 dolce = \markup { \italic { dolce } }
 rf = #(make-dynamic-script "rf")
 rit = \markup { \italic { ritardando } }
