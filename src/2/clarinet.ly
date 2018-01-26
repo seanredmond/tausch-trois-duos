@@ -4,6 +4,7 @@
 \include "../defs.ly"
 \include "1-allegro/clarinet.ly"
 \include "2-adagio/clarinet.ly"
+\include "3-rondo/clarinet.ly"
 
 \header {
   title =  "Six Duos"
@@ -52,6 +53,21 @@
           \context Staff <<
             \set Score.tempoHideNote = ##t
             \context Voice { \TwoTwoClarinet }
+          >>
+        >>
+    >>
+    \layout {}
+  }
+
+  \score {
+    \keepWithTag #'(withCue edited)
+    \removeWithTag #'orig
+    <<
+      \new Staff
+        <<
+          \context Staff <<
+            \set Score.tempoHideNote = ##t
+            \context Voice { \TwoThreeClarinet }
           >>
         >>
     >>

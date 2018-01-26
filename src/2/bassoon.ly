@@ -4,6 +4,7 @@
 \include "../defs.ly"
 \include "1-allegro/bassoon.ly"
 \include "2-adagio/bassoon.ly"
+\include "3-rondo/bassoon.ly"
 
 \header {
   title =  "Six Duos"
@@ -52,6 +53,21 @@
           \context Staff <<
             \set Score.tempoHideNote = ##t
             \context Voice { \TwoTwoBassoon }
+          >>
+        >>
+    >>
+    \layout {}
+  }
+
+ \score {
+    \keepWithTag #'(withCue edited)
+    \removeWithTag #'orig
+    <<
+      \new Staff
+        <<
+          \context Staff <<
+            \set Score.tempoHideNote = ##t
+            \context Voice { \TwoThreeBassoon }
           >>
         >>
     >>

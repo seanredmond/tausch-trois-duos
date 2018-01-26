@@ -10,6 +10,8 @@
 \include "2/1-allegro/bassoon.ly"
 \include "2/2-adagio/clarinet.ly"
 \include "2/2-adagio/bassoon.ly"
+\include "2/3-rondo/clarinet.ly"
+\include "2/3-rondo/bassoon.ly"
 
 \header {
   title =  "Six Duos"
@@ -128,6 +130,29 @@
           \set Staff.shortInstrumentName = "Basson"
           \context Staff << 
             \context Voice { \TwoTwoBassoon }
+          >>
+        >>
+    >>
+    \layout {}
+  }
+
+  \score {
+    \removeWithTag #'(withCue orig)
+    <<
+      \new Staff
+        <<
+          \set Staff.instrumentName = \markup { "Clarinet in B" \flat }
+          \set Staff.shortInstrumentName = "Clar."
+          \context Staff << 
+            \context Voice { \TwoThreeClarinet }
+          >>
+        >>
+      \new Staff
+        <<
+          \set Staff.instrumentName = "Bassoon"
+          \set Staff.shortInstrumentName = "Basson"
+          \context Staff << 
+            \context Voice { \TwoThreeBassoon }
           >>
         >>
     >>
