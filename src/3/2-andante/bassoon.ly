@@ -80,5 +80,5 @@ ThreeTwoBassoon = \relative e {
     c8 c8 g8 e8 | % 74
     c4 r4 | % 75
     c8 c8 e8 \< g8 \! | % 76
-    bes2 _\espressivo ^\fermata \bar "|."
+    bes2 _\espressivo _\seguer ^\fermata \bar "|."
 }
