@@ -16,6 +16,8 @@
 \include "3/1-allegro/bassoon.ly"
 \include "3/2-andante/clarinet.ly"
 \include "3/2-andante/bassoon.ly"
+\include "3/3-rondo/clarinet.ly"
+\include "3/3-rondo/bassoon.ly"
 
 \header {
   title =  "Six Duos"
@@ -216,6 +218,32 @@
           >>
         >>
     >>
+    \layout {}
+  }
+
+  \score {
+    \removeWithTag #'(withCue orig)
+    <<
+      \new Staff
+        <<
+          \set Staff.instrumentName = \markup { "Clarinet in B" \flat }
+          \set Staff.shortInstrumentName = "Clar."
+          \context Staff << 
+            \context Voice { \ThreeThreeClarinet }
+          >>
+        >>
+      \new Staff
+        <<
+          \set Staff.instrumentName = "Bassoon"
+          \set Staff.shortInstrumentName = "Basson"
+          \context Staff << 
+            \context Voice { \ThreeThreeBassoon }
+          >>
+        >>
+    >>
+    \header {
+      piece ="Rondo"
+    }
     \layout {}
   }
 }

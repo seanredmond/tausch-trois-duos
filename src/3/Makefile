@@ -19,7 +19,7 @@ clarinet: $(PDF)/$(PIECE)-clarinet.pdf
 
 bassoon: $(PDF)/$(PIECE)-bassoon.pdf
 
-midi: midi-allegro midi-andante
+midi: midi-allegro midi-andante midi-rondo
 
 midi-allegro:
 	cd 1-allegro && $(MAKE) midi
@@ -27,4 +27,6 @@ midi-allegro:
 midi-andante:
 	cd 2-andante && $(MAKE) midi
 
+midi-rondo:
+	cd 3-rondo && $(MAKE) midi
 
