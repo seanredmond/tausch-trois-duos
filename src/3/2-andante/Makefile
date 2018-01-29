@@ -3,6 +3,6 @@ MIDIF := ../../../midi
 PIECE := tausch-trois-duos-3
 
 $(MIDIF)/$(PIECE)-2.midi: midi.ly clarinet.ly bassoon.ly
-	lilypond -o $(MIDIF)/$(PIECE)-1 midi.ly
+	lilypond -o $(MIDIF)/$(PIECE)-2 midi.ly
 
 midi: $(MIDIF)/$(PIECE)-2.midi
