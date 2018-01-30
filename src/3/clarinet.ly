@@ -9,7 +9,6 @@
 \header {
   title =  "Six Duos"
   composer = "François Tausch"
-  opus = "Op. 21"
   instrument = \markup { "Clarinet in B" \flat }
 }
 
@@ -41,6 +40,9 @@
           >>
         >>
     >>
+    \header {
+        opus = "Op. 21 № 3"
+    }    
     \layout {}
   }
 

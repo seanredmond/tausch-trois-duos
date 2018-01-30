@@ -9,7 +9,6 @@
 \header {
   title =  "Six Duos"
   composer = "François Tausch"
-  opus = "Op. 21"
   instrument = "Bassoon"
 }
 
@@ -41,6 +40,9 @@
           >>
         >>
     >>
+    \header {
+        opus = "Op. 21 № 2"
+    }    
     \layout {}
   }
 

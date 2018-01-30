@@ -22,7 +22,6 @@
 \header {
   title =  "Six Duos"
   composer = "François Tausch"
-  opus = "Op. 21"
 }
 
 \paper {
@@ -60,6 +59,9 @@
           >>
         >>
     >>
+    \header {
+        opus = "Op. 21"
+    }    
     \layout {}
   }
 
