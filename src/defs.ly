@@ -11,3 +11,5 @@ prallNat = \markup {
                    \musicglyph #"scripts.prall"
                 }
             }
+
+tagline = ##t
