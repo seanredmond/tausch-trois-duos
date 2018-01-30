@@ -6,7 +6,7 @@ PIECE := tausch-trois-duos
 CLARINET := 1/*/clarinet.ly 2/*/clarinet.ly 3/*/clarinet.ly
 BASSOON := 1/*/bassoon.ly 2/*/bassoon.ly 3/*/bassoon.ly
 
-$(PDF)/$(PIECE)-score.pdf: score.ly $(CLARINET) $(BASSOON)
+$(PDF)/$(PIECE)-score.pdf: score.ly $(CLARINET) $(BASSOON) $(DEFS)
 	lilypond -o $(PDF)/$(PIECE)-score score.ly
 
 score: $(PDF)/$(PIECE)-score.pdf
