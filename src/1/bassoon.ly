@@ -9,6 +9,7 @@
   title =  "Six Duos"
   composer = "François Tausch"
   instrument = "Bassoon"
+  copyright = \ccZero
 }
 
 \paper {

@@ -10,6 +10,7 @@
   title =  "Six Duos"
   composer = "François Tausch"
   instrument = \markup { "Clarinet in B" \flat }
+  copyright = \ccZero
 }
 
 \paper {

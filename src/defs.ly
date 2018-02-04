@@ -13,3 +13,11 @@ prallNat = \markup {
             }
 
 tagline = ##t
+ccZero = \markup {
+  \center-column {
+    \epsfile #X #10 #"../cc0-88x31.eps"
+    "To the extent possible under law, Sean Redmond has waived"
+    "all copyright and related or neighboring rights to this work."
+    "This work is published from: United States."
+    }
+  }
